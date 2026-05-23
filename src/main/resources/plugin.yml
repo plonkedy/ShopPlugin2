@@ -1,0 +1,20 @@
+name: ShopPlugin
+version: 1.0.0
+main: com.example.shopplugin.ShopPlugin
+api-version: 1.21
+description: A simple GUI shop plugin with config support
+author: YourName
+
+commands:
+  shop:
+    description: Opens the shop GUI
+    usage: /shop [reload]
+    permission: shopplugin.use
+
+permissions:
+  shopplugin.use:
+    description: Allows the player to open /shop
+    default: true
+  shopplugin.reload:
+    description: Allows reloading the shop config with /shop reload
+    default: op
